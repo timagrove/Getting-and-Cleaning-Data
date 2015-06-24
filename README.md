@@ -24,3 +24,5 @@ So, the run_analysis.R will be located in this folder, and the data will reside 
 In practice, I have set working directory to GitHub/Getting-and-Cleaning-Data/ so that the tidy_data.txt file is located in the folder to sync back up to GitHub/Getting-and-Cleaning-Data/
 This will be commented out in the final uploaded copy
 	setwd("~/GitHub/Getting-and-Cleaning-Data/")
+
+In reviewing the data in Excel, prior to producing my tidy dataset, I found that there were subjects who only performed a single type of activity, whil eothers performed multiple.  In my tidy dataset that is represented.  I found other people's code on the internet where they had produced averages for all activities for all subjects, which is not represented in the full dataset.
