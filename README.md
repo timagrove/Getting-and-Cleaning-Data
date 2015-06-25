@@ -25,4 +25,4 @@ In practice, I have set working directory to GitHub/Getting-and-Cleaning-Data/ s
 This will be commented out in the final uploaded copy
 	setwd("~/GitHub/Getting-and-Cleaning-Data/")
 
-In reviewing the data in Excel, prior to producing my tidy dataset, I found that there were subjects who only performed a single type of activity, whil eothers performed multiple.  In my tidy dataset that is represented.  I found other people's code on the internet where they had produced averages for all activities for all subjects, which is not represented in the full dataset.
+
