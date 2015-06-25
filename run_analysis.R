@@ -34,7 +34,12 @@ features <- read.table("UCI HAR Dataset/features.txt")
 x_data <- rbind(x_train, x_test) 
 
 # create 'y' data set
+# NOTE:  I found that this code does not work right, as the merge() re-orders the rows of y_data
+# but I found out after the submission deadline.
 y_data <- rbind(y_train, y_test) %>% merge(activities,all=TRUE) %>% select(V2) %>% rename(activity=V2)
+
+# The below code will actually work correctly
+# y_data <- rbind(y_train, y_test)  %>% left_join(activities,by = c("V1"= "V1")) %>% select(V2) %>% rename(activity=V2)
 
 # create 'subject' data set
 # rename the column using the dplyr 'rename' command
